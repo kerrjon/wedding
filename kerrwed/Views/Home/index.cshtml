@@ -1,25 +1,30 @@
 ﻿@{
-    ViewBag.Title = "Kerr Wedding in Mexico with Sun Country Promo Code";
+  ViewBag.Title = "Kerr Wedding in Mexico with Sun Country Promo Code";
 }
 
-<h1>Sara & Jonathan Wedding</h1>
-<img src="~/Content/images/drink.png"  />
-<div class="mainBox">
-  @Html.ActionLink("Travel Information", "index", "travel")
-</div>
+<section id="names">
+  <div class="container">
+    <h1><span class="greatVibes">Sara & Jonathan</span></h1>
+    <img src="~/Content/images/drink.png" />
+    <div class="mainBox">
+      @Html.ActionLink("Travel Information", "index", "travel")
+    </div>
+  </div>
+</section>
 
-<div class="mainBox">
-  @Html.ActionLink("About the Resort", "index", "resort")About the Resort
-</div>
+<section class="panoramicPhoto">
+  <div class="container">
+    <p>We are so excited to share our special day with our family and friends!</p>
+    <p>Our destination wedding will take place at Hotel Marina El Cid Spa &amp; Beach Resort inPuerto  Morelos, Quintana Roo Mexico.</p>
 
-<div class="mainBox">
-  @Html.ActionLink("Travel Information", "index", "Travel")
-</div>
-
-<div class="mainBox">
-  @Html.ActionLink("RSVP", "index", "rsvp")
-</div>
-
+    <p>We will be there from February 12th through February 19th.  We have a Group Travel Package discount of $100 available for you.   Simply book through Sun Country and enter the code TPSYLV0928.
+      The ceremony will take place at the beach with a reception following immediately after.  The wedding attire is beach chic.  
+      
+    @Html.ActionLink("RSVP Now", "index", "rsvp", new{@class="button")
+    <p>Please RSVP by January 14th, 2015</p>
+    
+  </div>
+</section>
 
 
 

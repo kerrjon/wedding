@@ -139,7 +139,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\drink.png" />
+    <Content Include="Content\images\hotel-marina-el-cid-photo.jpg" />
     <Content Include="Content\images\island.png" />
+    <Content Include="Content\images\waves-blue-bottom.png" />
+    <Content Include="Content\images\waves-white-middle-2.png" />
+    <Content Include="Content\images\waves-white-middle-top.png" />
+    <Content Include="Content\images\waves-white-middle.png" />
+    <Content Include="Content\images\waves.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -197,6 +203,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\Sun-Country-Promo-Code-TPSYLV0928.pdf" />
+    <Content Include="Content\PSD\waves.psd" />
     <None Include="Scripts\jquery-1.8.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

@@ -6,6 +6,7 @@
   <title>@ViewBag.Title</title>
   @Styles.Render("~/Content/css")
   @Scripts.Render("~/bundles/modernizr")
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Great+Vibes|Oswald|Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
   <!--[if gte IE 9]>
     <style type="text/css">
       .gradient {
@@ -13,21 +14,22 @@
       }
     </style>
   <![endif]-->
-
   @Html.Partial("_GoogleAnalytics")
 </head>
 <body>
-  <div class="sky">
+  <header>
+    <div class="container">@Html.Partial("_NavigationMenu")
+</div>
+</header>
 
-      <div class="container">
-        @RenderBody()
+  @RenderBody()
 
-        @Html.Partial("_NavigationMenu")
+  <footer class="sky">
+    <div class="container">
+      <img class="island" src="/content/images/island.png" alt="tropical island for Kerr Wedding" />
+    </div>
+  </footer>
 
-        <img class="island" src="/content/images/island.png" alt="tropical island for Kerr Wedding" />
-      </div>
-
-  </div>
   @Scripts.Render("~/bundles/jquery")
   @RenderSection("scripts", required: false)
 </body>
