@@ -138,10 +138,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\columns.css" />
     <Content Include="Content\images\drink.png" />
+    <Content Include="Content\images\hotel-marina-el-cid-photo-cropped.jpg" />
     <Content Include="Content\images\hotel-marina-el-cid-photo.jpg" />
     <Content Include="Content\images\island.png" />
     <Content Include="Content\images\waves-blue-bottom.png" />
+    <Content Include="Content\images\waves-single-transparent.png" />
     <Content Include="Content\images\waves-white-middle-2.png" />
     <Content Include="Content\images\waves-white-middle-top.png" />
     <Content Include="Content\images\waves-white-middle.png" />

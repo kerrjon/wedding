@@ -1,0 +1,109 @@
+﻿.colmask {
+  clear: both;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.leftmenu {
+  background: none repeat scroll 0 0 blue;
+}
+
+  .leftmenu .column {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    left: 310px;
+    position: relative;
+    width: 188%;
+  }
+
+  .leftmenu .col1wrap {
+    float: right;
+    padding-bottom: 1em;
+    position: relative;
+    right: 354px;
+    width: 45%;
+  }
+
+  .leftmenu .col1 {
+    margin: 0 16px 0 200px;
+    overflow: hidden;
+    position: relative;
+    right: 100%;
+  }
+
+  .leftmenu .col2 {
+    float: left;
+    position: relative;
+    right: 297px;
+    width: 285px;
+  }
+
+
+.rightmenu {
+  background: none repeat scroll 0 0 green;
+}
+
+  .rightmenu .column {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    margin-left: -200px;
+    position: relative;
+    right: 100%;
+    width: 185%;
+  }
+
+  .rightmenu .col1wrap {
+    float: left;
+    left: 54%;
+    padding-bottom: 1em;
+    position: relative;
+    width: 45%;
+  }
+
+  .rightmenu .col1 {
+    margin: 0 15px 0 215px;
+    overflow: hidden;
+  }
+
+  .rightmenu .col2 {
+    float: right;
+    left: 185px;
+    position: relative;
+    width: 170px;
+  }
+
+
+.equalmenu {
+  background: none repeat scroll 0 0 red;
+}
+
+  .equalmenu .column {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    margin-left: -200px;
+    position: relative;
+    right: 128%;
+    width: 200%;
+  }
+
+  .equalmenu .col1wrap {
+    float: left;
+    left: 64%;
+    padding-bottom: 1em;
+    position: relative;
+    width: 35%;
+  }
+
+  .equalmenu .col1 {
+    margin: 0 15px 0 215px;
+    overflow: hidden;
+  }
+
+  .equalmenu .col2 {
+    float: right;
+    left: 449px;
+    position: relative;
+    width: 423px;
+  }

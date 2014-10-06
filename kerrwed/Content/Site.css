@@ -1,21 +1,10 @@
 ﻿body {
   font-size: .85em;
-  font-family: "Oswald","Segoe UI", Verdana, Helvetica, serif;
-  color: #232323;
+  font-family: "Open Sans",Arial, serif;
+  color: #333;
   text-align: center;
   margin: 0 0 32px 0;
-  background: #2e68a7; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none'
-  http://www.colorzilla.com/gradient-editor/#2e68a7+0,4f6982+33,c68684+93,2e68a7+100;Custom
-   */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU5OGE5ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iIzRmNjk4MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iI2M2ODY4NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1OThhOWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #2e68a7 0%, #4f6982 33%, #c68684 93%, #2e68a7 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e68a7), color-stop(33%,#4f6982), color-stop(93%,#c68684), color-stop(100%,#2e68a7)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #2e68a7 0%,#4f6982 33%,#c68684 93%,#2e68a7 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #2e68a7 0%,#4f6982 33%,#c68684 93%,#2e68a7 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #2e68a7 0%,#4f6982 33%,#c68684 93%,#2e68a7 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #2e68a7 0%,#4f6982 33%,#c68684 93%,#2e68a7 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e68a7', endColorstr='#2e68a7',GradientType=0 ); /* IE6-8 */
+  
 }
 
 h1{
@@ -23,9 +12,23 @@ h1{
   font-weight:normal;
 }
 
-h2, h3, h4{
+h2{
   font-family: 'Playfair Display', sans-serif;
+  font-size: 40px;
+  color: #F05A3F;
+  margin: .5em 0 .3em;
 }
+
+h3{
+  font-family: 'Playfair Display SC', sans-serif;
+  font-size: 20px;
+  margin: .2em 0;
+}
+
+p{
+  margin: 0 0 1em 0;
+}
+
 
 h1 span.greatVibes{
   font-family: 'Great Vibes', cursive;
@@ -38,6 +41,7 @@ header, footer, nav, section {
   display: block;
   position: relative;
 }
+
 
 
 /* Styles for basic forms
@@ -90,7 +94,10 @@ textarea {
   display: none;
 }
 
-
+.topSpacer{
+  background-color: #2e68a7;
+  height: 30px;
+}
 body {
   min-height: 500px;
 }
@@ -136,18 +143,20 @@ section, footer {
 section.panoramicPhoto{
   background: url('/content/images/hotel-marina-el-cid-photo.jpg');
   background-size: cover;
-
-
 }
 section.tuckUnder{
   margin-top: -20px;
+}
+section.wavesTop{
+   background: url('/content/images/waves-single-transparent.png') repeat-x 20px center; /* 23px hieght */
+   padding-top: 63px;
 }
 img.fullWidthImage{
   width: 100%;
 }
 div.soExcited{
   position:absolute;
-  top: 0;
+  top: 31px;
   text-align:center;
   width: 100%;;
 }
@@ -201,7 +210,7 @@ nav ul li a{
 #names{
   background: url('/content/images/waves-white-middle-2.png') repeat-x top center;
   z-index: 300;
-  margin-top: 20px;
+  margin-top: -13px;
 }
 #names .container{
   text-align:center;
