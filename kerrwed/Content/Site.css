@@ -36,6 +36,7 @@ h1 span.greatVibes{
 
 header, footer, nav, section {
   display: block;
+  position: relative;
 }
 
 
@@ -129,11 +130,30 @@ section, footer {
   width: 100%;
   clear:both;
   background: #fff;
+  min-width: 980px;
 }
 
 section.panoramicPhoto{
   background: url('/content/images/hotel-marina-el-cid-photo.jpg');
-  background-size: 100%;
+  background-size: cover;
+
+
+}
+section.tuckUnder{
+  margin-top: -20px;
+}
+img.fullWidthImage{
+  width: 100%;
+}
+div.soExcited{
+  position:absolute;
+  top: 0;
+  text-align:center;
+  width: 100%;;
+}
+div.soExcited p{
+  color:#fff; 
+  font-size: 1.7em;
 }
 
 footer{
@@ -179,7 +199,9 @@ nav ul li a{
 }
 
 #names{
-  background: url('/content/images/waves-blue-bottom.png') repeat-x top center;
+  background: url('/content/images/waves-white-middle-2.png') repeat-x top center;
+  z-index: 300;
+  margin-top: 20px;
 }
 #names .container{
   text-align:center;
@@ -188,4 +210,5 @@ nav ul li a{
 }
 #names h1{
   margin:0;
+color: #2e68a7;
 }
