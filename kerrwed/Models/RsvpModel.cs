@@ -16,5 +16,6 @@ namespace kerrwed.Models
     public string Name { get; set; }
     public string NumAdults { get; set; }
     public string NumKids { get; set; }
+    public string Comments { get; set; }
   }
 }

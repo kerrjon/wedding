@@ -19,10 +19,18 @@
 <body>
   @RenderBody()
 
-
   @Scripts.Render("~/bundles/jquery")
   @Scripts.Render("~/bundles/jqueryval")
-  
   @RenderSection("scripts", required: false)
+  
+  @if (!string.IsNullOrWhiteSpace(TempData["SessionOptionsMessage"] as string))
+{
+  <p class="sessionOptionsMessage @(!string.IsNullOrWhiteSpace(TempData["MessageType"] as string) ? TempData["MessageType"]: "")">@TempData["SessionOptionsMessage"]<a href="javascript:void(0)" class="textToImage closeLink" onclick="$(this).parent().hide()">close</a></p>
+  <script>
+    $(document).ready(function () {
+      $(".sessionOptionsMessage").show();
+    });
+  </script>
+}
 </body>
 </html>
