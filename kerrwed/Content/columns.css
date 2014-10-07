@@ -7,7 +7,7 @@
 }
 
 .leftmenu {
-  background: none repeat scroll 0 0 blue;
+  background: none repeat scroll 0 0 #fff;
 }
 
   .leftmenu .column {
@@ -42,7 +42,7 @@
 
 
 .rightmenu {
-  background: none repeat scroll 0 0 green;
+  background: none repeat scroll 0 0 #fff;
 }
 
   .rightmenu .column {
@@ -76,7 +76,7 @@
 
 
 .equalmenu {
-  background: none repeat scroll 0 0 red;
+  background: none repeat scroll 0 0 #fff;
 }
 
   .equalmenu .column {

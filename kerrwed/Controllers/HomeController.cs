@@ -1,12 +1,29 @@
 ﻿using System.Web.Mvc;
+using kerrwed.Models;
 
 namespace kerrwed.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+    public ActionResult Index()
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+      var model = new RsvpModel();
+      return View(model);
     }
+
+
+    [HttpPost]
+    public ActionResult Index(RsvpModel model)
+    {
+      if (ModelState.IsValid)
+      {
+        //send emails
+        return View("Success");
+      }
+      else
+      {
+        return View(model);
+      }
+    }
+  }
 }

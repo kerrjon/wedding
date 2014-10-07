@@ -1,4 +1,6 @@
-﻿@{
+﻿@using kerrwed.Models
+
+@{
   ViewBag.Title = "Kerr Wedding in Mexico with Sun Country Promo Code";
 }
 
@@ -30,10 +32,12 @@
               The ceremony will take place at the beach with a reception following immediately after.  The wedding attire is beach chic.
             </p>
             @Html.ActionLink("RSVP Now", "index", "rsvp", new { @class = "button" })
-            <p>Please RSVP by January 14th, 2015</p>
+            <p>Please RSVP by January 16th, 2015</p>
           </div>
         </div>
-        <div class="col2">Google Maps</div>
+        <div class="col2" style="padding-top: 20px;">
+          <img class="picture" src="~/Content/images/hotel-marina-el-cid-pier.jpg" alt="hotel marina el cid resort" />
+        </div>
       </div>
     </div>
   </div>
@@ -57,61 +61,75 @@
             <p>To use the Sun Country promo code you must stay at Hotel Marina El Cid Spa & Resort and you must travel over the President's day / Valentines Day weekend in 2015.</p>
           </div>
         </div>
-        <div class="col2">
-          <h3>Helpful Links</h3>
-          sun country
-          hotel, etc.
+        <div class="col2" style="text-align:center; padding-top: 50px;">
+          <img alt="sun country airlines promo code to Mexico" src="~/Content/images/sun-country-airlines-promo-code-mexico.png" style="padding-bottom: 20px" />
+          <p>Enter promo code <span class="promoCode">TPSLYV0928</span> at checkout for a group discount.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="wavesTop">
   <div class="container">
-    <div class="colmask leftmenu">
+    <div class="colmask equalmenu">
       <div class="column">
         <div class="col1wrap">
           <div class="col1">
-            <h2>Travel Information</h2>
-            <h3>Sun Country Vacations</h3>
-            <p>
-              The Hotel Marina El Cid Spa & Resort is listed under the vacation packages from Sun Country airlines.  Run a search for the Sun Country Vacations on their
-              for travel to Cancun, Mexico.  Select the hotel and choose your flights and room.  There is an option to apply a promo code if you book through Sun Country's
-              website.  Enter promo code <span class="promoCode">TPSLYV0928</span> and the discount should be applied.  The discounts is as follows:
-              <ul>
-                <li>$50 Discount if vacation package is less than $000</li>
-                <li>$100 </li>
-              </ul>
-            <p>To use the Sun Country promo code you must stay at Hotel Marina El Cid Spa & Resort and you must travel over the President's day / Valentines Day weekend in 2015.</p>
+            <h2>RSVP</h2>
+            <div class="rsvpForm">
+              @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+              {
+                @Html.EditorForModel()
+                <button type="submit">Submit RSVP</button>
+              }
+              @Html.ValidationSummary()
+            </div>
           </div>
         </div>
         <div class="col2">
-          <h3>Helpful Links</h3>
-          sun country
-          hotel, etc.
+          <h3 style="margin-top: 30px">Gift Registry</h3>
+          <p>Your presence is the only gift desired!</p>
+          <h3 style="margin-top: 30px">Helpful Links</h3>
+          <ul class="noBullets">
+            <li>
+              <a href="http://www.suncountry.com/page/1/sun-country-vacations.jsp/" target="_blank" title="Sun Country Vacations">Sun Country Vacations</a>
+            </li>
+            <li>
+              <a href="http://www.elcid.com/marina_beach_resort/" target="_blank" title="Hotel Marina El Cid Spa & Beach Resort">Hotel Marina El Cid Spa & Beach Resort</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="aboutUs">
+<section class="wavesTop">
   <div class="container">
-    <h2>About the Couple</h2>
-    <h3>Sara</h3>
-    <p>Sara is a Registered Nurse in the Post Anesthesia Care Unit at University of Minnesota, Fairview hospital in Minneapolis, MN.  She enjoys running and being active.  Sara also has a beautiful Siamese cat whom she loves very much.  </p>
+    <div class="colmask rightmenu">
+      <div class="column">
+        <div class="col1wrap">
+          <div class="col1">
+            <h2>About the Couple</h2>
+            <h3>Sara</h3>
+            <p>Sara is a Registered Nurse in the Post Anesthesia Care Unit at University of Minnesota, Fairview hospital in Minneapolis, MN.  She enjoys running and being active.  Sara also has a beautiful Siamese cat whom she loves very much.  </p>
+            <h3>Jonathan</h3>
+            <p>Jonathan grew up in Canada and moved to Minnesota to play hockey at Minnesota State University, Mankato.   Not only is he a great hockey player, but also a loving father to Hudson (9) and Hailey (8).  Jonathan is a Senior Developer at Marketing Architects in Minnetonka, MN.</p>
+            <h3>How We Met</h3>
+            <p>Sara and Jonathan met through a mutual friend and by close proximity (neighbors on Lake Calhoun) ended up spendingg a lot of time together.</p>
 
-    <h3>Jonathan</h3>
-    <p>Jonathan grew up in Canada and moved to Minnesota to play hockey at Minnesota State University, Mankato.   Not only is he a great hockey player, but also a loving father to Hudson (9) and Hailey (8).  Jonathan is a Senior Developer at Marketing Architects in Minnetonka, MN.</p>
+            <h3>How We Got Engaged</h3>
+            <p>Jonathan and Sara traveled to Cancun, Mexico over New Year's in 2013 to escape the winter.  Shortly after midnight, Jonathan brought Sara to the lifeguard tower by the beach and popped the question.  </p>
+          </div>
+        </div>
+        <div class="col2">
+          
+        </div>
+      </div>
+    </div>
 
-    <h3>How We Met</h3>
-    <p>Sara and Jonathan met through a mutual friend and by close proximity (neighbors on Lake Calhoun) ended up spendingg a lot of time together.</p>
-
-    <h3>How We Got Engaged</h3>
-    <p>Jonathan and Sara traveled to Cancun, Mexico over New Year's in 2013 to escape the winter.  Shortly after midnight, Jonathan brought Sara to the lifeguard tower by the beach and popped the question.  </p>
   </div>
-
 </section>
 
 
