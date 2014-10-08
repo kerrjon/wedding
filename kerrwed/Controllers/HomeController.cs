@@ -60,7 +60,7 @@ namespace kerrwed.Controllers
         }
 
         var mailMsg = new MailMessage("noreply@canamcup.com", 
-                                      "kerrjon@yahoo.com",
+                                      "sara.sylvester@gmail.com, kerrjon@yahoo.com",
                                       String.Format("Wedding RSVP {0}", model.IsAttending == 1 ? "Yes" : "No"), 
                                       body) {DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure};
         ss.Send(mailMsg);
