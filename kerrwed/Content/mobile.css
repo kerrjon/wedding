@@ -1,0 +1,335 @@
+﻿body {
+  font-size: .8em;
+  font-family: "Open Sans",Arial, serif;
+  color: #333;
+  text-align: center;
+  margin: 0
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 25px;
+  color: #e7213f;
+  margin: .5em 0 .3em;
+}
+
+h3 {
+  font-family: 'Playfair Display SC', sans-serif;
+  font-size: 20px;
+  margin: .2em 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+
+h1 span.greatVibes {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  line-height: 81px;
+}
+
+header, footer, nav, section {
+  display: block;
+  position: relative;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+  border: 1px solid #ddd;
+  padding: 0 1.4em 1.4em 1.4em;
+  margin: 0 0 1.5em 0;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+textarea {
+  min-height: 75px;
+}
+
+.editor-label {
+  margin: 1em 0 0 0;
+}
+
+.editor-field {
+  margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+  color: #f00;
+  display: block;
+}
+
+.field-validation-valid {
+  display: none;
+}
+
+.input-validation-error {
+  border: 1px solid #f00;
+  background-color: #fee;
+}
+
+.validation-summary-errors {
+  font-weight: bold;
+  color: #f00;
+}
+
+.validation-summary-valid {
+  display: none;
+}
+
+.topSpacer {
+  background-color: #2e68a7;
+}
+
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+
+section, footer {
+  width: 100%;
+  clear: both;
+  background: #fff;
+  padding: 0;
+  text-align: left;
+}
+
+  section.tuckUnder {
+    margin-top: -20px;
+  }w
+
+  section.wavesTop {
+    background: url('/content/images/waves-single-transparent.png') repeat-x 20px center; /* 23px hieght */
+    padding-top: 63px;
+  }
+
+  .content p, .content h2, .content h3, .content ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.wavesDivider {
+  background: url('/content/images/waves-single-transparent.png') repeat-x 20px center; /* 23px hieght */
+  height: 36px;
+}
+
+  section.pattern {
+    background: url('/content/images/bgrd1.jpg') repeat; /* 23px hieght */
+    padding-top: 15px;
+  }
+
+img.fullWidthImage {
+  width: 100%;
+}
+
+div.soExcited {
+  text-align: center;
+}
+
+.promoCode {
+  font-weight: bold;
+}
+
+div.soExcited p {
+  font-size: 1.5em;
+  font-family: 'Playfair Display SC', serif;
+}
+
+footer {
+  min-height: 300px;
+}
+
+ 
+
+  footer .container {
+    background: url('/content/images/island.png') no-repeat bottom center;
+  }
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+  nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+    nav ul li a {
+      display: block;
+    }
+
+#names {
+  background: url('/content/images/waves-white-middle-2.png') repeat-x top center;
+  z-index: 300;
+  margin-top: -13px;
+}
+
+  #names .container {
+    text-align: center;
+    padding-top: 33px;
+    height: 107px; /* 140 -33 */
+  }
+
+  #names h1 {
+    margin: 0;
+    color: #2e68a7;
+  }
+
+img.picture {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 26px 17px -19px #ccc;
+}
+
+.rsvpForm {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rsvpForm label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.rsvpForm button {
+  margin-top: 20px;
+}
+.rsvpForm input, .rsvpForm select, .rsvpForm textarea{
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "Open Sans",Arial, serif;
+}
+.rsvpForm textarea {
+  min-width: 80%;
+}
+
+button {
+  background: linear-gradient(to bottom, rgba(157, 116, 179, 1) 0%, rgba(245, 248, 249, 1) 0%, rgba(238, 242, 243, 1) 50%, rgba(225, 230, 230, 1) 96%, rgba(202, 206, 206, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid silver;
+  border-radius: 7px;
+  box-shadow: 0 7px 6px -8px silver;
+  color: #686c6e;
+  font-size: 18px;
+  line-height: 33px;
+  padding: 2px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+  button:hover {
+    background: linear-gradient(to bottom, rgba(157, 116, 179, 1) 0%, rgba(196, 77, 93, 1) 0%, rgba(240, 96, 119, 1) 26%, rgba(192, 54, 76, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #7f3b47;
+    color: #fff;
+    text-shadow: none;
+  }
+
+ul.noBullets {
+  margin: 0;
+  padding: 0;
+}
+
+  ul.noBullets li {
+    list-style-type: none;
+    margin: .5em 10px;
+  }
+
+
+.sessionOptions {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  padding-right: 4px;
+  font-size: 1.2em;
+  z-index: 1000;
+  border: 1px solid #368ecc;
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.sessionOptionsMessage {
+  position: fixed;
+  text-align: center;
+  line-height: 21px;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  color: #006600;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid green;
+  background-color: #E9FFE5;
+  display: none;
+  z-index: 10000;
+}
+
+  .sessionOptionsMessage.optionsError {
+    background-color: #FFE8EA;
+    color: #000;
+    border: 1px solid red;
+  }
+
+  .sessionOptionsMessage .closeLink {
+    float: right;
+    margin-right: 20px;
+    height: 31px;
+    width: 31px;
+    background: url('/Content/Images/close-black.png') no-repeat;
+  }
+
+    .sessionOptionsMessage .closeLink:hover {
+      background: url('/Content/Images/close-black-hover.png') no-repeat;
+    }
+
+    .textToImage {
+    display: block;
+    float: left;
+    font-size: 1px;
+    text-indent: -9999px;
+}
+
+    .heart {
+      background: url('/content/images/heart.png') no-repeat;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: -32px;
+      right: 55px;
+    }
+
+    .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

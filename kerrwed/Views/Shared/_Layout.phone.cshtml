@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>@ViewBag.Title</title>
+  @Styles.Render("~/MobileContent/css")
+  @Scripts.Render("~/bundles/modernizr")
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Great+Vibes|Open+Sans:400,700|Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
+  @Html.Partial("_GoogleAnalytics")
+</head>
+  <body>
+    <div class="topSpacer">&nbsp;</div>
+    <section id="names">
+      <div class="container">
+        <h1><span class="greatVibes">Sara & Jonathan</span></h1>
+      </div>
+    </section>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
+  
+    @if (!string.IsNullOrWhiteSpace(TempData["SessionOptionsMessage"] as string))
+    {
+      <p class="sessionOptionsMessage @(!string.IsNullOrWhiteSpace(TempData["MessageType"] as string) ? TempData["MessageType"]: "")">@TempData["SessionOptionsMessage"]<a href="javascript:void(0)" class="textToImage closeLink" onclick="$(this).parent().hide()">close</a></p>
+      <script>
+        $(document).ready(function () {
+          $(".sessionOptionsMessage").show();
+        });
+      </script>
+    }
+
+    <script>
+      function checkIsAttending() {
+        if ($('#IsAttending').val() == "1") {
+          $('#attendingOptions').slideDown(600);
+          if ($('#AdultsAttending').val() != "1" || $('#ChildrenAttending').val() != "0") {
+            $('#otherTravelers').slideDown(600);
+          }
+          else {
+            $('#otherTravelers').slideUp(600);
+          }
+        }
+        else {
+          $('#attendingOptions').slideUp(600);
+          $('#otherTravelers').slideUp(600);
+        }
+      }
+      $(document).ready(function () {
+        checkIsAttending();
+
+        $("#IsAttending, #AdultsAttending, #ChildrenAttending").change(function () {
+          checkIsAttending();
+        });
+      });
+    </script>
+  </body>
+</html>

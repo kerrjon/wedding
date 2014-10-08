@@ -27,6 +27,8 @@ namespace kerrwed
         "~/Content/site.css",
         "~/Content/columns.css"));
 
+      bundles.Add(new StyleBundle("~/MobileContent/css").Include("~/Content/mobile.css"));
+
       bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                   "~/Content/themes/base/jquery.ui.core.css",
                   "~/Content/themes/base/jquery.ui.resizable.css",
