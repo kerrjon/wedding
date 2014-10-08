@@ -1,5 +1,5 @@
 ﻿body {
-  font-size: .8em;
+  font-size: .85em;
   font-family: "Open Sans",Arial, serif;
   color: #333;
   text-align: center;
@@ -115,7 +115,7 @@ section, footer {
 
   section.tuckUnder {
     margin-top: -20px;
-  }w
+  }
 
   section.wavesTop {
     background: url('/content/images/waves-single-transparent.png') repeat-x 20px center; /* 23px hieght */
@@ -126,15 +126,11 @@ section, footer {
     margin-left: 10px;
     margin-right: 10px;
   }
+
 .wavesDivider {
   background: url('/content/images/waves-single-transparent.png') repeat-x 20px center; /* 23px hieght */
   height: 36px;
 }
-
-  section.pattern {
-    background: url('/content/images/bgrd1.jpg') repeat; /* 23px hieght */
-    padding-top: 15px;
-  }
 
 img.fullWidthImage {
   width: 100%;
@@ -205,6 +201,7 @@ img.picture {
 .rsvpForm {
   margin-left: 10px;
   margin-right: 10px;
+  max-width: 290px;
 }
 
 .rsvpForm label {
