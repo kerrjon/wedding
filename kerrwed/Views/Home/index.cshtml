@@ -1,15 +1,9 @@
-﻿@{
+﻿@model kerrwed.Models.RsvpModel
+@{
   ViewBag.Title = "Kerr Wedding in Puerto Morelos, Mexico use Sun Country Promo Code";
 }
 
-<div class="topSpacer">&nbsp;</div>
-<section id="names">
-  <div class="container">
-    <h1><span class="greatVibes">Sara & Jonathan</span></h1>
-    <div class="textToImage heart">Our Wedding will take place February 14, 2015</div>
-  </div>
-  
-</section>
+
 
 <section class="tuckUnder">
   <img class="fullWidthImage" src="~/Content/images/hotel-marina-el-cid-photo-cropped.jpg" />
@@ -25,11 +19,11 @@
         <div class="col1wrap">
           <div class="col1">
             <h2>Location</h2>
-            <p>Our destination wedding will take place on February 14, 2015 <br/>at Hotel Marina El Cid Spa &amp; Beach Resort in Puerto Morelos, Mexico.  Puerto Morelos is 27km (17 miles) south of Cancun's international airport (CUN).</p>
+            <p>Our destination wedding will take place on February 14, 2015 <br />at <a href="http://www.elcid.com/marina_beach_resort/" target="_blank" title="Hotel Marina El Cid Spa & Beach Resort">Hotel Marina El Cid Spa & Beach Resort</a> in Puerto Morelos, Mexico.  Puerto Morelos is 27km (17 miles) south of Cancun's international airport (CUN).</p>
             <p>
               We are travelling from February 12th through February 19th. The ceremony will take place at the beach with a reception following immediately after.  The wedding attire is beach chic.
             </p>
-            <p>Please RSVP by January 16th, 2015</p>
+            <p>Please <a href="#rsvp" title="RSVP">RSVP</a> by January 16th, 2015</p>
           </div>
         </div>
         <div class="col2" style="padding-top: 20px;">
@@ -48,7 +42,7 @@
           <div class="col1">
             <h2>Travel Information</h2>
             <h3>Sun Country Vacations</h3>
-            <p>The Hotel Marina El Cid Spa & Resort is a vacation packages destination for Sun Country airlines. We have a group discount rate available if you book through Sun Country Vacations using promo code <span class="promoCode">TPSLYV0928</span>.</p>
+            <p>The Hotel Marina El Cid Spa & Resort is a vacation package destination for Sun Country airlines. We have a group discount rate available if you book through Sun Country Vacations using promo code <span class="promoCode">TPSLYV0928</span>.</p>
             <ul>
               <li> $25 discount on air and hotel packages of $699–$999</li>
               <li> $50 discount on air and hotel packages of $1,000–$2,499 </li>
@@ -57,7 +51,7 @@
             </ul>
             <h3>How to Use the Sun County Vacations Promo Code</h3>
             <p>
-              To use the Sun Country promo code you must stay at Hotel Marina El Cid Spa & Resort and you must travel between 2/12/2015 and 2/19/2015.  For questions or to book your vacation visit <a href="http://suncountryvacations.com" target="_blank" title="Sun Country Vacations Promo Code TPSLYV0928">suncountryvacations.com</a> or call 1-877-411-1177 prompt 1 then 2 or contact your travel agent.
+              To use the Sun Country promo code you must stay at Hotel Marina El Cid Spa & Resort and you must travel between 2/09/2015 and 2/22/2015.  For questions or to book your vacation visit <a href="http://suncountryvacations.com" target="_blank" title="Sun Country Vacations Promo Code TPSLYV0928">suncountryvacations.com</a> or call 1-877-411-1177 prompt 1 then 2 or contact your travel agent.
             </p>
             <p>
               If you choose to book online, run a search for Sun Country Vacation packages for travel to Cancun, Mexico.  Select the The Hotel Marina El Cid Spa & Resort as your resort and choose your desired flights and room type.  There is an option to apply a promo code near the end of the checkout before you enter payment information.  Enter promo code <span class="promoCode">TPSLYV0928</span> and click "Apply."
@@ -73,69 +67,118 @@
   </div>
 </section>
 
-<section class="wavesTop" id="rsvp">
+<section class="wavesTop" style="margin-top: -32px;">
   <div class="container">
     <div class="colmask equalmenu">
       <div class="column">
         <div class="col1wrap">
           <div class="col1">
-            <h2>RSVP</h2>
-            <div class="rsvpForm">
-              @using (Html.BeginForm("Index", "Home", FormMethod.Post))
-              {
-                @Html.EditorForModel()
-                <button type="submit">Submit RSVP</button>
-              }
-              @Html.ValidationSummary()
-            </div>
-          </div>
-        </div>
-        <div class="col2">
-          <h3 style="margin-top: 30px">Gift Registry</h3>
-          <p>Your presence is the only gift desired!</p>
-          <h3 style="margin-top: 30px">Helpful Links</h3>
-          <ul class="noBullets">
-            <li>
-              <a href="http://www.suncountry.com/page/1/sun-country-vacations.jsp/" target="_blank" title="Sun Country Vacations">Sun Country Vacations</a>
-            </li>
-            <li>
-              <a href="http://www.elcid.com/marina_beach_resort/" target="_blank" title="Hotel Marina El Cid Spa & Beach Resort">Hotel Marina El Cid Spa & Beach Resort</a>
-            </li>
-            <li><a href="https://www.google.com/maps/place/Hotel+Marina+El+Cid+Spa+%26+Beach+Resort/&#64;20.834871,-86.889793,10z/data=!4m2!3m1!1s0x8f4e883a1acc0021:0x1cbf32f17a64beb4" title="Hotel Marina El Cid Resort and Spa on Google Maps" target="_blank">Resort Location on Google Maps</a></li>
-            <li><a href="http://travel.state.gov/content/passports/english.html" title="US Passports" target="_blank">Renew your US Passport</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="wavesTop">
-  <div class="container">
-    <div class="colmask rightmenu">
-      <div class="column">
-        <div class="col1wrap">
-          <div class="col1">
             <h2>About the Couple</h2>
             <h3>Sara</h3>
-            <p>Sara is a Registered Nurse in the Post Anesthesia Care Unit at University of Minnesota, Fairview hospital in Minneapolis, MN.  She enjoys running and being active.  Sara also has a beautiful Siamese cat whom she loves very much.  </p>
+            <p>Sara is a Registered Nurse in the Post Anesthesia Care Unit at University of Minnesota Medical Center, Fairview in Minneapolis, MN.  She enjoys running and being active.  Sara also has a beautiful Siamese cat whom she loves very much.  </p>
             <h3>Jonathan</h3>
             <p>Jonathan grew up in Canada and moved to Minnesota to play hockey at Minnesota State University, Mankato.   Not only is he a great hockey player, but also a loving father to Hudson (9) and Hailey (8).  Jonathan is a Senior Developer at Marketing Architects in Minnetonka, MN.</p>
             <h3>How We Met</h3>
-            <p>Sara and Jonathan met through a mutual friend and by close proximity (neighbors on Lake Calhoun) ended up spendingg a lot of time together.</p>
+            <p>Sara and Jonathan met through a mutual friend.  As neighbors on Lake Calhoun, they ended up spending a lot of time together.</p>
 
             <h3>How We Got Engaged</h3>
             <p>Jonathan and Sara traveled to Cancun, Mexico over New Year's in 2013 to escape the winter.  Shortly after midnight, Jonathan brought Sara to the lifeguard tower by the beach and popped the question.  </p>
           </div>
         </div>
         <div class="col2">
-
+          <h3 style="margin-top: 30px">Gift Registry</h3>
+          <p>Your presence is the only gift desired.</p>
+          <h3 style="margin-top: 30px">Helpful Links</h3>
+          <ul class="noBullets">
+            <li>
+              <a href="http://www.elcid.com/marina_beach_resort/" target="_blank" title="Hotel Marina El Cid Spa & Beach Resort">Hotel Marina El Cid Spa & Beach Resort</a>
+            </li>
+            <li><a href="https://www.google.com/maps/place/Hotel+Marina+El+Cid+Spa+%26+Beach+Resort/&#64;20.834871,-86.889793,10z/data=!4m2!3m1!1s0x8f4e883a1acc0021:0x1cbf32f17a64beb4" title="Hotel Marina El Cid Resort and Spa on Google Maps" target="_blank">Resort Location on Google Maps</a></li>
+            <li>
+              <a href="http://www.suncountry.com/page/1/sun-country-vacations.jsp/" target="_blank" title="Sun Country Vacations">Sun Country Vacations</a>
+            </li>
+            <li><a href="http://travel.state.gov/content/passports/english.html" title="US Passports" target="_blank">Renew your US Passport</a></li>
+          </ul>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+
+<section class="pattern" id="rsvp" style="padding-bottom:46px;">
+  <div class="wavesDivider"></div>
+  <div class="container">
+    <div class="rsvpForm">
+      <h2 style="margin-top: 0">RSVP</h2>
+      @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+      {
+
+        @Html.LabelFor(m => m.IsAttending)
+        @Html.DropDownListFor(x => x.IsAttending, new List<SelectListItem>()
+        {
+          new SelectListItem() { Text= "Select...", Value = "0", Selected = true},
+          new SelectListItem() { Text= "Yes", Value = "1" },
+          new SelectListItem() { Text= "No", Value = "2" }
+
+        })
+        @Html.ValidationMessageFor(m => m.IsAttending)
+
+        @Html.LabelFor(m => m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName)
+        @Html.ValidationMessageFor(m => m.FirstName)
+
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName)
+        @Html.ValidationMessageFor(m => m.LastName)
+
+        <div id="attendingOptions">
+
+          @Html.LabelFor(m => m.AdultsAttending)
+          @Html.DropDownListFor(x => x.AdultsAttending, new List<SelectListItem>()
+        {
+          new SelectListItem() { Text= "1", Value = "1" },
+          new SelectListItem() { Text= "2", Value = "2" },
+          new SelectListItem() { Text= "3", Value = "3" },
+          new SelectListItem() { Text= "4", Value = "4" }
+        })
+
+          @Html.LabelFor(m => m.ChildrenAttending)
+          @Html.DropDownListFor(x => x.ChildrenAttending, new List<SelectListItem>()
+        {
+          new SelectListItem() { Text= "0", Value = "0" },
+          new SelectListItem() { Text= "1", Value = "1" },
+          new SelectListItem() { Text= "2", Value = "2" },
+          new SelectListItem() { Text= "3", Value = "3" },
+          new SelectListItem() { Text= "4", Value = "4" }
+        })
+          
+          <div id="otherTravelers">
+            @Html.LabelFor(m => m.OtherNames)
+            @Html.TextAreaFor(m => m.OtherNames)
+          </div>
+
+
+          @Html.LabelFor(m => m.TravelDates)
+          @Html.TextAreaFor(m => m.TravelDates)
+
+        </div>
+       <br/>
+        <button type="submit">Submit</button>
+      }
+      @Html.ValidationSummary()
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 
 
 

@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\columns.css" />
+    <Content Include="Content\images\bgrd1.jpg" />
     <Content Include="Content\images\close-black-hover.png" />
     <Content Include="Content\images\close-black.png" />
     <Content Include="Content\images\drink.png" />

@@ -16,21 +16,54 @@
   <![endif]-->
   @Html.Partial("_GoogleAnalytics")
 </head>
-<body>
-  @RenderBody()
+  <body>
+    <div class="topSpacer">&nbsp;</div>
+    <section id="names">
+      <div class="container">
+        <h1><span class="greatVibes">Sara & Jonathan</span></h1>
+        <div class="textToImage heart">Our Wedding will take place February 14, 2015</div>
+      </div>
+    </section>
 
-  @Scripts.Render("~/bundles/jquery")
-  @Scripts.Render("~/bundles/jqueryval")
-  @RenderSection("scripts", required: false)
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
   
-  @if (!string.IsNullOrWhiteSpace(TempData["SessionOptionsMessage"] as string))
-{
-  <p class="sessionOptionsMessage @(!string.IsNullOrWhiteSpace(TempData["MessageType"] as string) ? TempData["MessageType"]: "")">@TempData["SessionOptionsMessage"]<a href="javascript:void(0)" class="textToImage closeLink" onclick="$(this).parent().hide()">close</a></p>
-  <script>
-    $(document).ready(function () {
-      $(".sessionOptionsMessage").show();
-    });
-  </script>
-}
-</body>
+    @if (!string.IsNullOrWhiteSpace(TempData["SessionOptionsMessage"] as string))
+    {
+      <p class="sessionOptionsMessage @(!string.IsNullOrWhiteSpace(TempData["MessageType"] as string) ? TempData["MessageType"]: "")">@TempData["SessionOptionsMessage"]<a href="javascript:void(0)" class="textToImage closeLink" onclick="$(this).parent().hide()">close</a></p>
+      <script>
+        $(document).ready(function () {
+          $(".sessionOptionsMessage").show();
+        });
+      </script>
+    }
+
+    <script>
+      function checkIsAttending() {
+        if ($('#IsAttending').val() == "1") {
+          $('#attendingOptions').slideDown(600);
+          if ($('#AdultsAttending').val() != "1" || $('#ChildrenAttending').val() != "0") {
+            $('#otherTravelers').slideDown(600);
+          }
+          else {
+            $('#otherTravelers').slideUp(600);
+          }
+        }
+        else {
+          $('#attendingOptions').slideUp(600);
+          $('#otherTravelers').slideUp(600);
+        }
+      }
+      $(document).ready(function () {
+        checkIsAttending();
+
+        $("#IsAttending, #AdultsAttending, #ChildrenAttending").change(function () {
+          checkIsAttending();
+        });
+      });
+    </script>
+  </body>
 </html>

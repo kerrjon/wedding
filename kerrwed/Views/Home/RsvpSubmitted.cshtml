@@ -1,5 +1,12 @@
-﻿@{
+﻿@model kerrwed.Models.RsvpModel
+@{
     ViewBag.Title = "Rsvp Submitted";
 }
 
-<h1>Rsvp Submitted</h1>
+@if (Model != null){
+  <h1>Thanks for your response @Model.FirstName. <br/>
+  @(Model.IsAttending == 1 ? "Get packing... see you in Mexico!" : "Sorry you cannot make it.")</h1>
+}
+else{
+  <h1>Thanks for your response.</h1>
+}

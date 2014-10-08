@@ -19,10 +19,11 @@ namespace kerrwed.Controllers
     public ActionResult Index(RsvpModel model)
     {
       if (ModelState.IsValid)
-      {        var emailIsSent = SendEmail(model);
+      {        
+        var emailIsSent = SendEmail(model);
         if (emailIsSent)
         {
-          return View("RsvpSubmitted");
+          return View("RsvpSubmitted", model);
         }
         TempData["MessageType"] = "optionsError";
         TempData["SessionOptionsMessage"] =
@@ -43,11 +44,25 @@ namespace kerrwed.Controllers
         ss.DeliveryMethod = SmtpDeliveryMethod.Network;
         ss.UseDefaultCredentials = false;
         ss.Credentials = new NetworkCredential("noreply@canamcup.com", "xx184533");
+        var body = String.Format("RSVP: {0} \n\nFirst Name: {1} \nLast Name: {2}", model.IsAttending == 1 ? "Yes" : "No", model.FirstName, model.LastName);
+
+        if (model.IsAttending == 1)
+        {
+          body += String.Format("\n\nAdults Attending: {0} \nChildren Attending: {1}", model.AdultsAttending,
+            model.ChildrenAttending);
+          
+          if (model.AdultsAttending != 1 || model.ChildrenAttending != 0)
+          {
+            body += String.Format("\n\nOther Travelers: {0}", model.OtherNames);
+          }
+
+          body += String.Format("\n\nTravel Information: {0}", model.TravelDates);
+        }
 
         var mailMsg = new MailMessage("noreply@canamcup.com", 
-                                      "jkerr@markarch.com",
-                                      "test subject here", 
-                                      "test body goes here") {DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure};
+                                      "kerrjon@yahoo.com",
+                                      String.Format("Wedding RSVP {0}", model.IsAttending == 1 ? "Yes" : "No"), 
+                                      body) {DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure};
         ss.Send(mailMsg);
 
         return true;
@@ -56,11 +71,6 @@ namespace kerrwed.Controllers
       {
         return false;
       }
-    }
-
-    public ActionResult RsvpSubmitted()
-    {
-      return View();
     }
   }
 }
